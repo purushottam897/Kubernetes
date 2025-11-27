@@ -19,7 +19,7 @@ function YourComponent() {
   const[totalQsns , SetTotalQsns] = useState(0);
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch(`http://localhost:2074/api/questions/${courseId}`, {
+    fetch(`http://localhost:30083/api/questions/${courseId}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
