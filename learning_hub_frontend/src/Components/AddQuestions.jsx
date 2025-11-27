@@ -72,7 +72,7 @@ function AddQuestion() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch('http://localhost:2074/api/questions', {
+      const response = await fetch('http://localhost:30083/api/questions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
