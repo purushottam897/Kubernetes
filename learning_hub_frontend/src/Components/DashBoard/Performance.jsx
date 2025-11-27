@@ -13,7 +13,7 @@ const Performance = () => {
       try {
         const userId = localStorage.getItem("id");
         const token = localStorage.getItem("token");
-        const response = await axios.get(`http://localhost:8082/api/learnings/${userId}`, {
+        const response = await axios.get(`http://localhost:30083/api/learnings/${userId}`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
