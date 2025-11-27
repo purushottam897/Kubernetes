@@ -28,7 +28,7 @@ function RegistrationForm() {
     setError(""); // Clear previous errors
 
     try {
-      const response = await fetch("http://localhost:2074/api/user/add", {
+      const response = await fetch("http://localhost:30083/api/user/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
