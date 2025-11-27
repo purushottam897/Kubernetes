@@ -23,7 +23,7 @@ function AddCourse() {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch('http://localhost:2074/api/courses', {
+      const response = await fetch('http://localhost:30083/api/courses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
